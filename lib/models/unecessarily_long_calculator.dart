@@ -164,7 +164,7 @@ class UnecessarilyLongCalculator {
       // add the binary number to the buffer
       binaryBuffer.write(binary);
     }
-    // return the binary number
+    // return the binary number without leading zeros
     return binaryBuffer.toString().replaceFirst(RegExp(r'^0+'), '');
   }
 
